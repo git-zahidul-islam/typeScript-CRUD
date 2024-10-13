@@ -50,10 +50,11 @@ const handleDelete = async ( id :string) => {
             <p>{product.description}</p>
             <p>{product.price}</p>
           </div>
+          {/* add some */}
           <div className="flex justify-between flex-wrap gap-y-3">
             <button className="p-2 bg-green-400/60">Details</button>
             <button className="p-2 bg-green-400/60">Add To card</button>
-            <button className="p-2 bg-green-400/60">Buy This</button>
+            <button className="p-2 bg-yellow-400/60">Buy This</button>
             <button onClick={()=>handleDelete(product._id)} className="p-2 bg-green-400/60">Delete</button>
             <Link to={`/update/${product._id}`} className="p-2 bg-green-400/60">Update</Link>
           </div>
